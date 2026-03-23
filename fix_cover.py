@@ -2,7 +2,9 @@ import subprocess
 import tempfile
 from pathlib import Path
 from mutagen.id3 import ID3, APIC
-from config import MUSIC_DIR
+from config import MUSIC_DIR_STR
+
+MUSIC_DIR = Path.home() / MUSIC_DIR_STR
 
 for mp3 in MUSIC_DIR.rglob("*.mp3"):
     try:
