@@ -3,7 +3,7 @@ import yt_dlp
 from mutagen.easyid3 import EasyID3
 from config import MUSIC_DIR
 
-PLAYLIST_URL = "https://www.youtube.com/playlist?list=PL3J_Antq9nCbOUTe5ArML8tAGtkqtCi6n"
+PLAYLIST_URL = "PLAYLIST_URL"
 OUTPUT = "playlist.m3u"
 
 

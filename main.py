@@ -1,7 +1,9 @@
 import yt_dlp
+from config import MUSIC_DIR
 
 ydl_opts = {
-    "js_runtimes": ["node"],
+    "paths": {"home": MUSIC_DIR},
+    "js_runtimes": {"node": {"executable": "/usr/bin/node"}},
     "outtmpl": "%(track,title)s.%(ext)s",
     "format": "bestaudio/best",
     "postprocessors": [
